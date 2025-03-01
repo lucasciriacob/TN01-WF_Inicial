@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnMenor = new Button();
+            btnCadastrar = new Button();
             lblProduto = new Label();
             lblPreco = new Label();
             txtNome = new TextBox();
             txtPreco = new TextBox();
             SuspendLayout();
             // 
-            // btnMenor
+            // btnCadastrar
             // 
-            btnMenor.Location = new Point(35, 139);
-            btnMenor.Name = "btnMenor";
-            btnMenor.Size = new Size(198, 23);
-            btnMenor.TabIndex = 0;
-            btnMenor.Text = "Mostrar o mais barato";
-            btnMenor.UseVisualStyleBackColor = true;
+            btnCadastrar.Location = new Point(35, 139);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.Size = new Size(198, 23);
+            btnCadastrar.TabIndex = 0;
+            btnCadastrar.Text = "Cadastrar";
+            btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // lblProduto
             // 
@@ -85,7 +86,7 @@
             Controls.Add(txtNome);
             Controls.Add(lblPreco);
             Controls.Add(lblProduto);
-            Controls.Add(btnMenor);
+            Controls.Add(btnCadastrar);
             Name = "FormEx7";
             Text = "FormEx7";
             ResumeLayout(false);
@@ -94,7 +95,7 @@
 
         #endregion
 
-        private Button btnMenor;
+        private Button btnCadastrar;
         private Label lblProduto;
         private Label lblPreco;
         private TextBox txtNome;

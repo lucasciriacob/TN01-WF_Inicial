@@ -12,10 +12,16 @@ namespace WFInicial
 {
     public partial class FormEx7 : Form
     {
+        public string[] nomeproduto = new string[6];
+        public double[] precoproduto = new double[6];
         public FormEx7()
         {
             InitializeComponent();
         }
 
-          }
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            int quantvetor = nomeproduto.Length;
+        }
+    }
 }
