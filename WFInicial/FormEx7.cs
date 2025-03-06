@@ -33,7 +33,7 @@ namespace WFInicial
             {
                 double menor = Listaprecoproduto.Min();
                 int pos_menor = Array.IndexOf(Listaprecoproduto, menor);
-                string message = $"O produto mais barato é {Listanomeproduto[pos_menor]} de valor {menor}";
+                string message = $"O produto mais barato é {Listanomeproduto[pos_menor]} de valor {menor:F2}";
                 MessageBox.Show(message);
             }
         }
