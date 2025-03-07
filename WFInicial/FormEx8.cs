@@ -28,57 +28,61 @@ namespace WFInicial
                 MessageBox.Show("Os valores digitados não são números!", "Erro", 
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (rdbSoma.Checked)
+            else
             {
-                resultado = num1 + num2;
-                string message = $"A soma de {num1} + {num2} = {resultado}";
-                MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (rdbSubtracao.Checked)
-            {
-                resultado = num1 - num2;
-                string message = $"A subtração de {num1} - {num2} = {resultado}";
-                MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (rdbMultiplicacao.Checked)
-            {
-                resultado = num1 * num2;
-                string message = $"A multiplicação de {num1} x {num2} = {resultado}";
-                MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (rdbDivisao.Checked)
-            {
-                if (num2 == 0)
+                if (rdbSoma.Checked)
                 {
-                    MessageBox.Show("O denominador não pode ser igual a 0!", "Erro",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    resultado = num1 / num2;
-                    string message = $"A divisão de {num1} / {num2} = {resultado}";
+                    resultado = num1 + num2;
+                    string message = $"A soma de {num1} + {num2} = {resultado}";
                     MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-            }
-            else if (rdbPotenciacao.Checked)
-            {
-                resultado = Math.Pow(num1, num2);
-                string message = $"A potenciação de {num1} ^ {num2} = {resultado}";
-                MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (rdbRadiacao.Checked)
-            {
-                if (num2 == 0)
+                else if (rdbSubtracao.Checked)
                 {
-                    MessageBox.Show("O denominador não pode ser igual a 0!", "Erro",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    resultado = Math.Pow(num1, (1 / num2));
-                    string message = $"A raiz de {num1} ^ {num2} = {resultado}";
+                    resultado = num1 - num2;
+                    string message = $"A subtração de {num1} - {num2} = {resultado}";
                     MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                else if (rdbMultiplicacao.Checked)
+                {
+                    resultado = num1 * num2;
+                    string message = $"A multiplicação de {num1} x {num2} = {resultado}";
+                    MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (rdbDivisao.Checked)
+                {
+                    if (num2 == 0)
+                    {
+                        MessageBox.Show("O denominador não pode ser igual a 0!", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        resultado = num1 / num2;
+                        string message = $"A divisão de {num1} / {num2} = {resultado}";
+                        MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else if (rdbPotenciacao.Checked)
+                {
+                    resultado = Math.Pow(num1, num2);
+                    string message = $"A potenciação de {num1} ^ {num2} = {resultado}";
+                    MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (rdbRadiacao.Checked)
+                {
+                    if (num2 == 0)
+                    {
+                        MessageBox.Show("O denominador não pode ser igual a 0!", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        resultado = Math.Pow(num1, (1 / num2));
+                        string message = $"A raiz de {num1} ^ {num2} = {resultado}";
+                        MessageBox.Show(message, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+
             }
         }
     }
